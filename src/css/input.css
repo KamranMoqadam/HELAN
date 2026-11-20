@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
-@source "../components/**/*.html";
-@source "../fa/**/*.html";
-@source "../*.html";
+/* Tailwind CSS Source Paths */
+@source "../../components/**/*.html";
+@source "../../fa/**/*.html";
+@source "../../*.html";
 @source "../js/**/*.js";
-@source "../**/**/*.js";
+
+
 /* =========================================================
    Poppins - English
    ========================================================= */
