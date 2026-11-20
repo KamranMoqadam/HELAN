@@ -1,10 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+<!-- =========================================================
+     HELAN - Persian Header
+========================================================== -->
+
+<header
+        dir="rtl"
+        lang="fa"
+        class="sticky top-0 z-50 w-full border-b border-surface bg-background/95 font-fa backdrop-blur-md"
+>
+    <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+
+        <div class="flex h-20 items-center justify-between gap-6">
+
+            <!-- Brand Logo -->
+            <a
+                    href="../index.html"
+                    class="flex shrink-0 items-center"
+                    aria-label="هلانه - صفحه اصلی"
+            >
+                <img
+                        src="../assets/images/logo/Original%20Logo%20With%20Text.png"
+                        alt="لوگوی هلانه"
+                        width="180"
+                        height="64"
+                        fetchpriority="high"
+                        class="h-12 w-auto object-contain"
+                >
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav
+                    class="hidden items-center gap-8 lg:flex"
+                    aria-label="منوی اصلی"
+            >
+
+                <a
+                        href="../fa/index.html"
+                        class="group relative py-2 text-sm font-medium text-text-primary transition-colors duration-300 hover:text-brand-accent"
+                >
+                    خانه
+                    <span class="absolute bottom-0 right-0 h-px w-0 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a
+                        href="../fa/projects.html"
+                        class="group relative py-2 text-sm font-medium text-text-primary transition-colors duration-300 hover:text-brand-accent"
+                >
+                    پروژه‌ها
+                    <span class="absolute bottom-0 right-0 h-px w-0 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a
+                        href="../fa/services.html"
+                        class="group relative py-2 text-sm font-medium text-text-primary transition-colors duration-300 hover:text-brand-accent"
+                >
+                    خدمات
+                    <span class="absolute bottom-0 right-0 h-px w-0 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a
+                        href="../fa/contact.html"
+                        class="group relative py-2 text-sm font-medium text-text-primary transition-colors duration-300 hover:text-brand-accent"
+                >
+                    تماس با ما
+                    <span class="absolute bottom-0 right-0 h-px w-0 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+            </nav>
+
+
+            <!-- Desktop Actions -->
+            <div class="hidden items-center gap-5 lg:flex">
+
+                <!-- Language Switcher -->
+                <div class="relative">
+
+                    <button
+                            id="language-toggle"
+                            type="button"
+                            class="flex items-center gap-2 rounded-sm px-2 py-2 text-sm font-medium text-text-secondary transition-colors duration-300 hover:text-brand-accent"
+                            aria-label="انتخاب زبان"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-controls="language-menu"
+                    >
+
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="17"
+                                height="17"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                        >
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M2 12h20"></path>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+
+                        <span>فا</span>
+
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                        >
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+
+                    </button>
+
+
+                    <!-- Language Dropdown -->
+                    <div
+                            id="language-menu"
+                            class="invisible absolute right-0 top-full mt-3 min-w-36 translate-y-2 rounded-sm border border-surface bg-background py-2 opacity-0 shadow-lg transition-all duration-200"
+                            role="menu"
+                            aria-label="انتخاب زبان"
+                    >
+
+                        <a
+                                href="../index.html"
+                                data-lang="en"
+                                role="menuitem"
+                                lang="en"
+                                class="block px-5 py-2.5 text-sm text-text-secondary transition-colors duration-200 hover:bg-surface hover:text-brand-primary"
+                        >
+                            انگلیسی
+                        </a>
+
+                        <a
+                                href="../fa/index.html"
+                                data-lang="fa"
+                                role="menuitem"
+                                lang="fa"
+                                aria-current="true"
+                                class="block bg-surface px-5 py-2.5 text-sm font-medium text-brand-primary"
+                        >
+                            فارسی
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact CTA -->
+                <a
+                        href="../fa/contact.html"
+                        class="inline-flex items-center justify-center border border-brand-primary bg-brand-primary px-5 py-3 text-xs font-medium text-background transition-all duration-300 hover:border-brand-secondary hover:bg-brand-secondary"
+                >
+                    ارتباط با ما
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button
+                    id="mobile-menu-toggle"
+                    type="button"
+                    class="flex h-11 w-11 items-center justify-center rounded-sm border border-surface text-brand-primary transition-colors duration-300 hover:bg-surface lg:hidden"
+                    aria-label="باز کردن منوی ناوبری"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+            >
+
+                <!-- Open Icon -->
+                <svg
+                        id="menu-open-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        aria-hidden="true"
+                >
+                    <path d="M4 7h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 17h16"></path>
+                </svg>
+
+
+                <!-- Close Icon -->
+                <svg
+                        id="menu-close-icon"
+                        class="hidden"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        aria-hidden="true"
+                >
+                    <path d="m18 6-12 12"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div
+                id="mobile-menu"
+                class="hidden border-t border-surface pb-6 pt-4 lg:hidden"
+        >
+
+            <nav
+                    class="flex flex-col"
+                    aria-label="منوی موبایل"
+            >
+
+                <a
+                        href="../fa/index.html"
+                        class="border-b border-surface py-3.5 text-sm font-medium text-text-primary transition-colors duration-200 hover:text-brand-accent"
+                >
+                    خانه
+                </a>
+
+                <a
+                        href="../fa/projects.html"
+                        class="border-b border-surface py-3.5 text-sm font-medium text-text-primary transition-colors duration-200 hover:text-brand-accent"
+                >
+                    پروژه‌ها
+                </a>
+
+                <a
+                        href="../fa/services.html"
+                        class="border-b border-surface py-3.5 text-sm font-medium text-text-primary transition-colors duration-200 hover:text-brand-accent"
+                >
+                    خدمات
+                </a>
+
+                <a
+                        href="../fa/contact.html"
+                        class="border-b border-surface py-3.5 text-sm font-medium text-text-primary transition-colors duration-200 hover:text-brand-accent"
+                >
+                    تماس با ما
+                </a>
+
+            </nav>
+
+
+            <!-- Mobile Actions -->
+            <div class="mt-5 flex items-center justify-between gap-4">
+
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center gap-4 text-sm">
+
+                    <a
+                            href="../index.html"
+                            data-lang="en"
+                            lang="en"
+                            class="text-text-secondary transition-colors hover:text-brand-accent"
+                    >
+                        EN
+                    </a>
+
+                    <span
+                            class="h-4 w-px bg-brand-accent"
+                            aria-hidden="true"
+                    ></span>
+
+                    <a
+                            href="../fa/index.html"
+                            data-lang="fa"
+                            lang="fa"
+                            aria-current="true"
+                            class="font-medium text-brand-primary"
+                    >
+                        FA
+                    </a>
+
+                </div>
+
+
+                <!-- Mobile Contact CTA -->
+                <a
+                        href="../fa/contact.html"
+                        class="inline-flex items-center justify-center bg-brand-primary px-5 py-3 text-xs font-medium text-background transition-colors duration-300 hover:bg-brand-secondary"
+                >
+                    ارتباط با ما
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
