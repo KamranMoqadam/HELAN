@@ -1,0 +1,16 @@
+{
+  "name": "helan",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   **A Thoughtful Digital Presence for HELAN**\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}
